@@ -726,7 +726,7 @@ h1 > span > span {
   
 }
 
-@media screen and (min-width: 400px) and (max-width: 900px) {
+@media screen and (min-width: 400px) and (max-width: 900px) and (max-height: 900px) {
   .portfolio-title {
     flex-direction: column;
   }
@@ -741,9 +741,9 @@ h1 > span > span {
   }
 }
 
-@media screen and (max-width: 399px) {
+@media screen and (max-width: 399px) and (max-height: 900px) {
   .bio-intro {
-    margin-top: 10em;
+    margin-top: 15em;
  }
 
  .bio {
@@ -752,6 +752,7 @@ h1 > span > span {
 
 
  .portfolio-title {
+  margin-top: 8em;
   flex-direction: column;
 }
 
