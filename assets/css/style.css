@@ -109,11 +109,7 @@ body {
     margin: 0.75rem;
 }
 
-.languages i {
-    width: 2.5rem;
-    height: 10vh;
-    font-size: 1.85rem;
-}
+x 
 
 .date span {
     font-weight: bold;
@@ -747,11 +743,27 @@ h1 > span > span {
 
 @media screen and (max-width: 399px) {
   .bio-intro {
-    margin-top: 2em;
+    margin-top: 10em;
  }
+
+ .bio {
+  margin-top: 0;
+}
+
+
+ .portfolio-title {
+  flex-direction: column;
+}
 
 
  .languages ul{
   flex-wrap: wrap;
 }
+
+.languages i {
+  width: 1.75rem;
+  height: 5vh;
+  font-size: 1.35rem;
+}
+
 }
