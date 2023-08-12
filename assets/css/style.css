@@ -743,7 +743,7 @@ h1 > span > span {
 
 @media screen and (max-width: 399px) and (max-height: 900px) {
   .bio-intro {
-    margin-top: 1;
+    margin-top: 1em;
  }
 
  .bio {
