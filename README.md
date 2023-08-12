@@ -1,7 +1,7 @@
 
 <h2 align="center">
     Portfolio Website v1.0<br/>
-    <a href="https://joecarian.github.io/">
+    <a href="https://joecarian.github.io/" target="_blank" rel="noopener">
     joecarian.github.io</a>
 </h2>
 
