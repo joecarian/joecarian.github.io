@@ -749,4 +749,9 @@ h1 > span > span {
   .bio-intro {
     margin-top: 2em;
  }
+
+
+ .languages ul{
+  flex-wrap: wrap;
+}
 }
