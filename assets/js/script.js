@@ -1,3 +1,12 @@
+const colorsCard = {
+    0: '#009688',
+    1: '#FF3E7F',
+    2: '#FF3E7F',
+    3: '#03A9F4',
+    4: '#03A9F4'
+}
+
+
 function isElementInViewport(element) {
     const rect = element.getBoundingClientRect();
     return (
@@ -42,5 +51,31 @@ const navLinks = document.querySelectorAll('.nav-link');
 navLinks.forEach(navLink => {
   navLink.addEventListener('click', togglerButtonOnClick);
 });
+
+const projectCards = document.querySelectorAll('.card');
+projectCards.forEach((cardHidden, index) => {
+    cardHidden.style.setProperty('color', colorsCard[index]);
+});
+const anchors = document.querySelectorAll('.content > a');
+anchors.forEach((anchor, index) => {
+    anchor.style.setProperty('background-color', colorsCard[index]);
+    anchor.addEventListener('mouseover', hoverCardAnchor);
+    anchor.addEventListener('mouseout', () => {
+        anchor.style.setProperty('background-color', colorsCard[index]);
+        anchor.style.setProperty('color', 'white');
+        anchor.style.removeProperty('opacity');
+    });
+});
+
+function resetAnchor() {
+    this.style.setProperty('background-color', colorsCard[index]);    
+}
+
+function hoverCardAnchor() {
+    this.style.setProperty('opacity', 0.8);
+    this.style.setProperty('background-color', '#000000');
+    this.style.setProperty('color', 'aqua');
+}
+
 handleScrollAnimation();
 

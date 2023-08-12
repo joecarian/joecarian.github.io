@@ -129,8 +129,6 @@ section {
 }
 
 
-
-/* social media icons styling */
 .social-icons {
     font-size: 36px;
     cursor: pointer;
@@ -141,7 +139,7 @@ section {
 .fab {
     color: #BFBEC2;
 }
-/* footer styling */
+
 #footer {
     background-color: #050506;
     text-align: center;
@@ -211,7 +209,6 @@ h1 > span > span {
     border-radius: 20px;
     transition: 0.5s;
     background-color: #040C1C;
-    /* box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15); */
 }
 
 .container-card .card:hover {
@@ -231,7 +228,6 @@ h1 > span > span {
 
 .container-card .card:hover .img-box {
     top: -100px;
-    /* scale: 0.75; */
     box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
 }
 
@@ -267,7 +263,7 @@ h1 > span > span {
 }
 
 .container-card .card .content p {
-    color: #333;
+    color: white;
 }
 
 .container-card .card .content a {
@@ -283,7 +279,6 @@ h1 > span > span {
 
 .container-card .card .content a:hover {
     opacity: 0.8;
-    background-color: #000000;
     color: aqua;
 }
 
@@ -566,7 +561,7 @@ h1 > span > span {
     transition: opacity 0.5s ease-in-out;
 }
 
-.hidden:not(.typewriter) { /* Escludi la classe "typewriter" dall'animazione per mantenere la sua animazione originale */
+.hidden:not(.typewriter) { 
     transform: translateY(20px);
 }
 
@@ -719,5 +714,11 @@ h1 > span > span {
   color: #040C1C;
 }
 
+#firstArrow {
+  color: #BFBEC2;
+}
 
+#secondArrow {
+  color: #044CAC;
+}
 
