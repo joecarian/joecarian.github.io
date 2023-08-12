@@ -750,6 +750,10 @@ h1 > span > span {
   margin-top: 0;
 }
 
+#home .hidden {
+  opacity: 1;
+}
+
 
  .portfolio-title {
   margin-top: 8em;
