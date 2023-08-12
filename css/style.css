@@ -1,5 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap'); */
-
 body {
     background-color: #242324;
     color: #BFBEC2;
@@ -7,27 +5,30 @@ body {
 }
 
 
-/* display background color black on navbar scroll */
 .navbar.navbar-custom {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    /* background-color: #ffffff; Imposta il colore di sfondo desiderato */
-    z-index: 100; /* Imposta un valore di z-index appropriato per assicurarti che la navbar sia posizionata sopra il contenuto della pagina */
-    /* Altri stili, come altezza, spaziatura, colori del testo, ecc. */
+    z-index: 100;
     background-color: #050506;
     color: #BFBEC2;
   }
   
-  /* Personalizzazione dei link della navbar */
   .navbar.navbar-custom .navbar-nav .nav-link {
     color: #BFBEC2;
   }
   
-  /* Personalizzazione dello stato attivo dei link della navbar */
   .navbar.navbar-custom .navbar-nav .nav-link.active {
     font-weight: bold;
+  }
+
+  .navbar-collapse.show {
+    display: block;
+  }
+  
+  .navbar-collapse.show .navbar-nav {
+    float: none;
   }
 
 #home {

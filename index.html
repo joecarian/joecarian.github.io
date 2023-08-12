@@ -4,6 +4,17 @@
   <title>Joe Carian - Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="I am a software engineer with 2 years of experience in
+  IoT application development. I work in a team with methodology
+  agile. I have skills in programming languages such as.
+  Java, Python and C++. In addition, I have experience
+  in implementing communication protocols such as
+  MQTT and CoAP. I am passionate about technology and always
+  looking for new challenges.">
+  <meta property="og:title" content="Joe Carian - Portfolio"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="image/Joe_Carian.png"/>
+  <meta property="og:description" content="Hi, I am a software engineer"/>
   <!-- linking css file -->
   <link rel="stylesheet" href="css/style.css">
   <!-- bootstrap CDN -->
@@ -11,13 +22,14 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/546f0d15f5.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="image/Joe_Carian.png" type="image/x-icon">
 </head>
 
 <body>
     <!-- navbar -->
     <nav class="navbar navbar-expand-md navbar-dark navbar-custom">
         <div class="container">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="toggler">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
@@ -32,17 +44,15 @@
                 <a class="nav-link" href="#services">Work</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="image/cv.jpeg" target="_blank">Resume</a>
+                <a class="nav-link" href="image/cv.jpeg" target="_blank" rel="noopener">Resume</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-    </nav>
-
     <section  id="home">
         <div class="bio-intro">
-            <img src="image/Joe_Carian.png" alt="">
+            <img src="image/Joe_Carian.png" alt="Logo">
             <h1>Hello, I'm
                 <span>
                     <span>Giuseppe Luongo</span>
@@ -112,33 +122,35 @@
             <div class="card hidden" style="--clr: #009688">
                 <div class="img-box">
                     <img
-                        src="image/ecohotel.png">
+                        src="image/ecohotel.png" alt="Image EcoHotelMonitor Project">
                 </div>
                 <div class="content">
                     <h2>EcoHotelMonitor</h2>
                     <p style="color: white;">
                         EcoHotelMonitor an Ethereum-based system for tracking the consumption of energy produced by photovoltaic panels.
                     </p>
-                    <a href="https://github.com/joecarian/EcoHotelMonitor" target="_blank">Source Code</a>
+                    <a href="https://github.com/joecarian/EcoHotelMonitor" target="_blank" rel="noopener">Source Code</a>
                 </div>
             </div>
             <div class="card hidden" style="--clr: #FF3E7F">
                 <div class="img-box">
                     <img
-                        src="https://images.unsplash.com/photo-1639825988283-39e5408b75e8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1205&q=80">
+                        src="https://images.unsplash.com/photo-1639825988283-39e5408b75e8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1205&q=80"
+                        alt="Image ReportCrypto Project">
                 </div>
                 <div class="content">
                     <h2>Report Crypto</h2>
                     <p style="color: white;">
                         The reporter crypto module is a cryptocurrency reporting system. Its purpose is to retrieve information about cryptocurrencies, from CoinMarketCap platform.
                     </p>
-                    <a href="https://github.com/joecarian/ReportCrypto" target="_blank">Source Code</a>
+                    <a href="https://github.com/joecarian/ReportCrypto" target="_blank" rel="noopener">Source Code</a>
                 </div>
             </div>
             <div class="card hidden" style="--clr: #FF3E7F">
                 <div class="img-box">
                     <img
-                        src="https://images.unsplash.com/photo-1639825988283-39e5408b75e8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1205&q=80">
+                        src="https://images.unsplash.com/photo-1639825988283-39e5408b75e8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1205&q=80"
+                        alt="Image Project 3">
                 </div>
                 <div class="content">
                     <h2>Project #2</h2>
@@ -153,7 +165,8 @@
             <div class="card hidden" style="--clr: #03A9F4">
                 <div class="img-box">
                     <img
-                        src="https://images.unsplash.com/photo-1471922694854-ff1b63b20054?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=872&q=80">
+                        src="https://images.unsplash.com/photo-1471922694854-ff1b63b20054?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=872&q=80"
+                        alt="Image Project 4">
                 </div>
                 <div class="content">
                     <h2>Project #3</h2>
@@ -168,7 +181,8 @@
             <div class="card hidden" style="--clr: #03A9F4">
                 <div class="img-box">
                     <img
-                        src="https://images.unsplash.com/photo-1471922694854-ff1b63b20054?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=872&q=80">
+                        src="https://images.unsplash.com/photo-1471922694854-ff1b63b20054?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=872&q=80"
+                        alt="Image Project 5">
                 </div>
                 <div class="content">
                     <h2>Project #4</h2>
@@ -207,8 +221,8 @@
         <div class="container-fluid">
             <!-- social media icons -->
             <div class="social-icons ">
-                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/joecarian" target="_blank"><i class="fab fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/joecarian" target="_blank" rel="noopener"><i class="fab fa-brands fa-github"></i></a>
             </div>
         </div>
     </footer>

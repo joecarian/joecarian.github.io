@@ -1,4 +1,3 @@
-// Funzione per controllare quando l'elemento entra nella visualizzazione
 function isElementInViewport(element) {
     const rect = element.getBoundingClientRect();
     return (
@@ -9,7 +8,6 @@ function isElementInViewport(element) {
     );
 }
 
-// Funzione per gestire l'animazione
 function handleScrollAnimation() {
     const elements = document.querySelectorAll('.hidden');
     elements.forEach((element) => {
@@ -27,9 +25,22 @@ function handleScrollAnimation() {
     }
 }
 
-// Aggiungi un evento di scroll per attivare l'animazione quando l'utente scorre verso la sezione
-window.addEventListener('scroll', handleScrollAnimation);
+function togglerButtonOnClick () {
+    const navBar = document.getElementById('navbarNav');
+    if (navBar.classList.contains('show')){
+        navBar.classList.remove('show');
+    }
+    else {
+        navBar.classList.add('show');
+    }
+}
 
-// Esegui l'animazione una volta all'inizio, nel caso in cui l'elemento è già nella visualizzazione
+window.addEventListener('scroll', handleScrollAnimation);
+document.getElementById('toggler').addEventListener('click', togglerButtonOnClick);
+const navLinks = document.querySelectorAll('.nav-link');
+
+navLinks.forEach(navLink => {
+  navLink.addEventListener('click', togglerButtonOnClick);
+});
 handleScrollAnimation();
 
