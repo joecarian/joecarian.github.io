@@ -730,12 +730,23 @@ h1 > span > span {
   
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 400px) and (max-width: 900px) {
   .portfolio-title {
     flex-direction: column;
   }
 
+  .bio {
+    margin-top: 0;
+  }
+
+
   .languages ul{
     flex-wrap: wrap;
   }
+}
+
+@media screen and (max-width: 399px) {
+  .bio-intro {
+    margin-top: 1em;
+ }
 }
