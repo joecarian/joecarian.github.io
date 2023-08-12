@@ -1,4 +1,3 @@
-const os = require("os");
-const API_EMAIL = os.environment.get("API_EMAIL");
-const SERVICE_ID = os.environment.get("SERVICE_ID");
-const TEMPLATE_ID = os.environment.get("TEMPLATE_ID");
+const API_EMAIL = "yh8uH_C9Xe0uIooBL";
+const SERVICE_ID = "service_f6m4ntp";
+const TEMPLATE_ID = "template_0yl1rfo";
