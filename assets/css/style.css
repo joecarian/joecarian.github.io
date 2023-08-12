@@ -51,6 +51,7 @@ body {
     text-decoration-thickness: 4px;
     margin-right: 1em;
     font-family: 'Geologica', sans-serif;
+    align-self: flex-start;
 }
 
 #home img {
@@ -93,7 +94,6 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-left: 1.91rem;
 }
 
 .languages ul{
@@ -722,3 +722,20 @@ h1 > span > span {
   color: #044CAC;
 }
 
+
+@media screen and (orientation: landscape) {
+  .portfolio-title {
+    margin-top: 5.75em;
+  }
+  
+}
+
+@media screen and (max-width: 900px) {
+  .portfolio-title {
+    flex-direction: column;
+  }
+
+  .languages ul{
+    flex-wrap: wrap;
+  }
+}
